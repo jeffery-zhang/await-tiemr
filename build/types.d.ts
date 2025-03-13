@@ -1,5 +1,5 @@
-type AsyncFunction = (...args: any[]) => Promise<any>;
-type SyncFunction = (...args: any[]) => any;
+export type AsyncFunction = (...args: any[]) => Promise<any>;
+export type SyncFunction = (...args: any[]) => any;
 export type LoopCallback = AsyncFunction | SyncFunction;
 export interface IAwaitTimer {
     isStopped: boolean;
@@ -11,4 +11,3 @@ export type AwaitTimerOptions = {
     immediate?: boolean;
     autoStart?: boolean;
 };
-export {};
